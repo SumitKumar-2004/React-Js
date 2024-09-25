@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+h1{
+  text-align: center;
+  font-size: 80px;
+  text-transform:uppercase;
+  transition: .3s;
+}
+h1:hover{
+  color: #523a69;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  background: #ffc107;
+}
+.container {
+  min-width: 700px;
+  width: 100%;
+  padding: 30px;
+  background: #523a69;
+  border-radius: 17px;
+  /* box-shadow: 0 10px 20px(0, 0, 0, 0.01); */
+  box-shadow: -8px 8px 20px white;
+  transition: .2s;
+}
+.container:hover{
+  box-shadow: 8px -8px 20px white;
+}
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.text-input .to-text {
+  border-radius: 0px;
+  border-left: 1px solid #ccc;
+}
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.text-input textarea::placeholder {
+  color: white;
+}
+.controls,
+li,
+.icons,
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+}
+.controls .row .icons {
+  width: 38%;
+}
+.controls .row .icons i {
+  width: 50px;
+  color:white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  justify-content: center;
+}
+.controls .row.from .icons {
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+.controls .row.to .icons {
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+}
+select{
+  color: white;
+  background-color: yellow;
+}
+.controls .row select {
+  color :white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+  background: #523a69;
+
+  padding-left: 5px;
+}
+.text-input textarea::-webkit-scrollbar {
+  width: 4px;
+}
+.controls .row select::-webkit-scrollbar {
+  width: 8px;
+}
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+  background: #fff;
+}
+.text-input textarea::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 8px;
+}
+.controls .row select::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.controls .exchange {
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+.controls i:active {
+  transform: scale(0.9);
+}
+.container button {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color:black;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 35px;
+  border-radius: 5px;
+  background: #ffc107;
+  transition: 0.8s all ease;
+  
+}
+.container button:hover{
+  background-color: white;
+}
